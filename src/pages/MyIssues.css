@@ -1,0 +1,451 @@
+.my-issues-page {
+  padding: 24px;
+}
+
+.header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header button {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.page-header button:hover {
+  background-color: var(--primary-color);
+}
+
+.page-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.register-section {
+  margin: 20px 0;
+}
+
+.register-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.complaints-list h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.no-complaints {
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-top: 32px;
+  font-size: 1.1rem;
+}
+
+.complaint-card {
+  background-color: var(--primary-color);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.complaint-card > div:first-child {
+    cursor: pointer;
+}
+
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.complaint-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.complaint-card p {
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.complaint-card .status,
+.complaint-detail-content .status {
+  font-weight: 600;
+  margin-top: 8px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 18px;
+  font-size: 0.85rem;
+}
+
+.status.pending {
+  background-color: #f59e0b20;
+  color: #f59e0b;
+}
+
+.status.resolved {
+  background-color: #16a34a20;
+  color: #16a34a;
+}
+
+.approved, .not-approved {
+    font-weight: 600;
+    font-size: 0.9rem !important;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.approved {
+    color: #16a34a;
+}
+
+.not-approved {
+    color: #ef4444;
+}
+
+.vote-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--secondary-text-color);
+}
+
+.vote-buttons button {
+    background: transparent;
+    border: none;
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.vote-buttons button:hover {
+    color: var(--accent-color);
+}
+
+.complaint-detail-page .page-header {
+  margin-bottom: 16px;
+}
+
+.complaint-detail-content p {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+}
+
+.complaint-detail-content a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.complaint-detail-content a:hover {
+    text-decoration: underline;
+}
+
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-text-color);
+  color: var(--text-color);
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.location-input {
+    display: flex;
+    align-items: center;
+}
+
+.location-input input {
+    flex-grow: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.location-input button {
+    padding: 14px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.audio-note-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.audio-note-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-text-color);
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.audio-note-controls button:hover {
+    background-color: var(--primary-color);
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.audio-player audio {
+    flex-grow: 1;
+}
+
+.audio-player button {
+    color: #ef4444;
+    font-size: 1.2rem;
+}
+
+.department {
+  font-weight: 600;
+  margin-top: 8px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 18px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.department.electrical { background-color: #f59e0b20; color: #f59e0b; }
+.department.water { background-color: #3b82f620; color: #3b82f6; }
+.department.municipal { background-color: #8b5cf620; color: #8b5cf6; }
+.department.garbage { background-color: #ef444420; color: #ef4444; }
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.form-group select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.audio-player-detail {
+    margin: 20px 0;
+}
+.audio-player-detail audio {
+    width: 100%;
+}
+
+.tasklist {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+}
+
+.tasklist h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.tasklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasklist li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.tasklist input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--accent-color);
+}
+
+.department-response {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.department-response h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.department-response p {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+}
+
+.complaint-card p.description {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.complaint-detail-content p.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.location-status {
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+    margin-top: 8px;
+}
+
+.filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.filter-group {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-group button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-text-color);
+    color: var(--text-color);
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-group button.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0 14px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-text-color);
+}
+
+.sort-options select {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.sort-options select:focus {
+    outline: none;
+}
+
+.sort-options svg {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
