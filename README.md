@@ -1,12 +1,52 @@
-# React + Vite
+# Civic Mitra  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Civic Mitra is a civic issue reporting and resolution platform built during **Smart India Hackathon 2025**.  
+It addresses problem statement **250301 – Crowdsourced Civic Issue Reporting and Resolution System**, provided by the **Government of Jharkhand**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview  
 
-## Expanding the ESLint configuration
+Civic Mitra allows citizens to:  
+- Report issues they encounter in their surroundings.  
+- Browse and support issues raised by others.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+It allows civic employees to:  
+- Access reported issues.  
+- Assign task lists to the appropriate departments.  
+- Update progress and remain accountable for resolution.  
+
+---
+
+## Features  
+
+- Issue reporting with details and media.  
+- Community support through browsing and voting on issues.  
+- Employee dashboard for viewing, assigning, and updating issues.  
+- Built-in accountability through task tracking.  
+
+---
+
+## Tech Stack  
+
+- **Frontend**: React  
+- **Backend**: Node.js  
+- **Database**: MongoDB  
+
+---
+
+## Project Structure  
+
+/frontend -> React application
+/backend -> Node.js server
+/database -> MongoDB collections
+
+
+---
+
+## Setup  
+
+1. Clone the repository.  
+2. Install dependencies in both `/frontend` and `/backend`:  
+   ```bash
+   npm install
